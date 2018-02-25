@@ -44,7 +44,7 @@ class App extends Component {
         x = (-b / (2 * a));
         this.setState({ answer: `Equation has one root! x=${x}`, })
       }
-      else {
+      if (d < 0) {
         this.setState({ answer: 'Equation does not have a solution!', })
       }
     }
